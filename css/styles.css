@@ -24,7 +24,7 @@ p {
 
 ::-webkit-input-placeholder { 
     color:    rgb(192,192,192);
-     opacity: 1 !important;
+    opacity: 1 !important;
 }
 
 /* CLASS STYLES */
@@ -148,17 +148,34 @@ input[type="checkbox"] {
     width: 50%;
 }
 
+/* PSEUDO*/
+
 textarea:focus,
 input:focus {
     border: 1.5px darkslateblue solid;
     background: #AFEEEE;
-    transition-duration: 3s;
+    transition-duration: 1.5s;
+    transform: scale(1.05);
+}
+
+button:hover {
+    background: orange;
+    transition-duration: 1.5s;
 }
 
 input::placeholder {
     text-align: right;
     padding-right: 15px;
 }
+
+select {
+    font-family: Cursive;
+}
+
+select:focus {
+    background: #AFEEEE;
+}
+
 
 /* MEDIA QUERIES */
 
