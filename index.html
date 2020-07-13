@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+        <form action="index.html" method="post">
+
+            <h1 class="main-header">THE CODE REVIEW</h1>
+            
+            <div class="main-ph">
+                <h2>Signup for our Newsletter</h2>
+
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div> <!--main-ph-->
+
+            <div class="t-border"></div>
+            <div class="main-content">
+                <fieldset class="fieldset-1">
+
+                    <legend>Contact Information</legend>
+
+                    <div class="flex">
+                        <label class="label-t" for="full-name">Full Name</label>
+                        <input type="text" placeholder="Required" id="full-name" name="user_full_name">
+                    </div>
+
+                    <div class="flex">
+                        <label for="mail">Email Address</label>
+                        <input type="email" placeholder="Required" id="mail" name="user_email">
+                    </div>
+
+                    <div class="flex">
+                        <label for="number">Phone Number</label>
+                        <input type="tel" id="number" name="user_phone_number">
+                    </div>
+
+                    <div class="flex">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user_city">
+                    </div>
+
+                    <div class="flex">
+                    <label for="state">State</label>
+                        <select id="state" name="user_state">
+
+                        <option value="western_cape">Western Cape</option>
+                        <option value="northern_cape">Northern Cape</option>
+                        <option value="eastern_cape">Eastern Cape</option>
+                        <option value="gauteng">Gauteng</option>
+                        <option value="free_state">Free State</option>
+                        <option value="north_west">North West</option>
+                        <option value="kwaZulu_natal">KwaZulu-Natal</option>
+                        <option value="limpopo">Limpopo</option>
+                        <option value="mpumalanga">Mpumalanga</option>
+                    
+                        </select>
+                    </div>
+
+                    <div class="flex">
+                        <label for="zip">Zip Code</label>
+                        <input type="number" id="zip" name="user_zip_code">
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="fieldset-2">
+
+                    <legend>Newsletter</legend>
+
+                    <label>Select the newsletter you would like to receive</label>
+                        <input type="checkbox" id="html" value="html_news" name="user_news"><label class="label-d" for="html">HTML News</label><br>
+                        <input type="checkbox" id="css" value="css_news" name="user_news"><label class="label-d" for="css">CSS News</label><br>
+                        <input type="checkbox" id="javascript" value="javascript_news" name="user_news"><label class="label-d" for="javascript">JavaScript News</label>
+
+                    <label>Newsletter format</label>
+                      <input type="radio" id="html-format" value="html" name="user_newsletter_format"><label class="label-d" for="html-format">HTML</label> <br>
+                      <input type="radio" id="plain-text-format" value="plain_text" name="user_newsletter_format"><label class="label-d" for="plain-text-format">Plain text</label>
+
+                    <label for="topics">Other topics you'd like to hear about</label>
+                    <textarea id="topics" name="user_topics"></textarea>
+
+                </fieldset>
+
+                <button type="submit">Sign up</button>
+
+
+
+            </div> <!--main-content-->
+
+        </form>
+
+        <footer class="main-footer">
+
+            <p>Copyright The Code Review</p>
+
+        </footer>
+
+</body>
+</html>

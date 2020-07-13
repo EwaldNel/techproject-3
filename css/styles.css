@@ -1,0 +1,213 @@
+/* BASE STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+    padding: 0.1px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    color: 	rgb(168,168,168);
+    font-size: 15px;
+}
+
+::-webkit-input-placeholder { 
+    color:    rgb(192,192,192);
+     opacity: 1 !important;
+}
+
+/* CLASS STYLES */
+
+.main-header {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    padding: 15px;
+    background: rgb(56,56,56);
+    color: white;
+}
+
+.main-ph {
+    margin: auto;
+    width: 95%;
+    text-align: center;
+    padding: 0 10px 20px 10px;
+    border-bottom: solid black 3px;
+    margin-bottom: 2px;
+}
+
+.t-border {
+    border-top: solid black 1px;
+    width: 95%;
+    margin: auto;
+    padding-top: 30px;
+    margin-top: 3px;
+}
+
+.main-content {
+    margin: 0 auto;
+    padding: 15px;
+    width: 95%;
+    background :rgb(238,255,230);
+}
+
+.main-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fieldset-1 {
+    border-bottom: solid black 2px;
+    margin-bottom: 40px;
+}
+
+.fieldset-2 {
+    margin-top: 20px;
+}
+
+.label-d {
+    display: inline-block;
+    font-size: 15px;
+}
+
+
+/* FORM STYLES */
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 17px;
+    color: 	rgb(112,112,112);
+}
+
+legend {
+    margin-bottom: 15px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 15px 40px;
+    color: #FFF;
+    background-color: #33B3A6;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="city"] {
+  background: rgb(240,240,240);
+  font-family: 'Baloo Da 2', cursive;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0;
+  width: 100%;
+  color:  initial;
+  margin-bottom: 20px;
+  padding-right: 0;
+}
+
+textarea {
+    padding: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+#zip {
+    width: 50%;
+}
+
+textarea:focus,
+input:focus {
+    border: 1.5px darkslateblue solid;
+    background: #AFEEEE;
+    transition-duration: 3s;
+}
+
+input::placeholder {
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+
+/* BASE STYLES */
+
+body {
+    max-width: 1150px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+/* CLASS STYLES */
+
+#zip {
+    width: 30%;
+}
+
+.main-ph, 
+.t-border {
+    width: 65%;
+}
+
+.main-content {
+    width: 65%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex input,
+select {
+    width: 75%;
+}
+
+.flex input#zip {
+    margin-right: 45%;
+    
+}
+
+.flex label {
+    font-size: 12px;
+    margin-top: 10px
+}
+
+}
